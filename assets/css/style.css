@@ -467,11 +467,11 @@ img {
 }
 
 .skills__mysql {
-    width: 60%;
+    width: 80%;
 }
 
 .skills__java {
-    width: 70%;
+    width: 90%;
 }
 
 .skills__close .skills__list{
@@ -547,4 +547,16 @@ color: var(--first-color);
     height: 100%;
     background-color: var(--first-color);
     transform: translate(6px, -7px);
+}
+
+.qualification [data-content]{
+    display: none;
+}
+
+.qualification__active[data-content]{
+   display: block; 
+}
+
+.qualification__button.qualification__active{
+    color: var(--first-color);
 }
