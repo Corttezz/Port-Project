@@ -724,7 +724,7 @@ color: var(--first-color);
 }
 
 .swiper-button-next{
-    left: -.5rem;
+    right: -.5rem;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets{
