@@ -30,7 +30,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -45,13 +45,13 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
                         </a>
                     </li>
                     <li class="nav__item">
@@ -64,6 +64,9 @@
             </div>
 
             <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -172,7 +175,7 @@
 
         <!--  =============== SKILLS ===============  -->
 
-        <section class="skills section" id="section">
+        <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My technical level</span>
 
@@ -762,7 +765,7 @@
                         <img src="assets/img/linkedin.jfif" alt="" class="certifications__img">
 
                         <div class="certifications__data">
-                            <p class="certifications__description">Certified by Linkedin</p>
+                            <p class="certifications__description">Certified by LinkedIn</p>
                             <a target="_blank" href="https://www.linkedin.com/learning/certificates/537e4dadc29516a27a190bb3aff7ea5acb232237dca1b3198540e63eccd7e579?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BNp1rEmYbRpiRgdddV6b2AA%3D%3D" class="button button--flex button--small certifications__button">
                                 View More
                                 <i class="uil uil-arrow-right button__icon"></i>
@@ -844,7 +847,7 @@
                         </a>
                     </div>
 
-                    <img src="./assets/img/oie_8437252W5FZKpD.gif" alt="" class="about__img project__img">
+                    <img src="./assets/img/oie_8437252W5FZKpD.gif" alt="" class="project__img">
 
                 </div>
             </div>
@@ -963,17 +966,14 @@
 
     <!--  =============== SCROLL TOP ===============  -->
 
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
     <!--  =============== MAIN JS ===============  -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <!--  =============== SWIPER JS ===============  -->
-
-
-
-
-
 
 </body>
 
