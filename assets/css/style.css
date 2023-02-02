@@ -6,7 +6,7 @@
 
     /*  =============== colors ===============  */
     /*  =============== change colors ===============  */
-    --hue-color: 142;
+    --hue-color: 142; /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
 
     /*  =============== HSL color mode ===============  */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -20,6 +20,8 @@
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /*  =============== font and typography ===============  */
     --body-font: 'Poppins', sans-serif;
@@ -74,6 +76,8 @@ body.dark-theme{
     --input-color: hsl(var(--hue-color), 29%, 16%);
     --body-color: hsl(var(--hue-color), 28%, 12%);
     --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
 
@@ -998,4 +1002,21 @@ contact__label {
 
 .show-scroll{
     bottom: 5rem;
+}
+
+/*===================================== SCROLL BAR ======================================*/
+
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--text-color-light);
 }
