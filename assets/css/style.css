@@ -547,6 +547,14 @@ img {
     width: 90%;
 }
 
+.skills__azure{
+    width: 80%;
+}
+
+.skills__googlecloud{
+    width: 60%;
+}
+
 .skills__close .skills__list {
     height: 0;
     overflow: hidden;

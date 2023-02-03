@@ -175,3 +175,15 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+function SendMail(){
+    var params = {
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("email_id").value,
+        project : document.getElementById("project").value,
+        message : document.getElementById("message").value,  
+    }
+    emailjs.send("service_muju2as", "template_wmrsm4p", params).then(function(res){
+        alert("Success!" + res.status);
+    })
+}
